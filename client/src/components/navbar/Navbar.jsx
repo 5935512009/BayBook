@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./navbar.css";
 import icons from '../../assets/icons/BayBook-icons.png'
 export default function Navbar() {
+
   return (
     <div className="nav">
       <div className="nav-left">
@@ -15,6 +16,7 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
+
       <div className="nav-right">
         <button className="log-in">Log in</button>
         <button className="sign-up">Sign up</button>
