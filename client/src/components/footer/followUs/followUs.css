@@ -1,0 +1,7 @@
+.followUS{
+    display: flex;
+    flex-direction: column;
+}
+.followUs-head{
+    font-weight: 500;
+}

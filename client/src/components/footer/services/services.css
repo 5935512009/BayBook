@@ -1,0 +1,7 @@
+.services{
+    display: flex;
+    flex-direction: column;
+}
+.services-head{
+    font-weight: 500;
+}

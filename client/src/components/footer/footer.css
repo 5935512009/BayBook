@@ -1,4 +1,15 @@
 .footer{
+    padding: 10px;
     background-color: rgb(214, 214, 214);
+}
+
+.footer-middle{
     display: flex;
+    justify-content: space-between;
+    background-color: #999999;
+    color: black;
+    padding: 15px 32px;
+    border-radius: 15px;
+    font-weight: 400;
+    gap: 10px;
 }

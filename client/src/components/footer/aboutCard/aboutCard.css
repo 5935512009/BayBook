@@ -1,0 +1,7 @@
+.aboutCard{
+    display: flex;
+    flex-direction: column;
+}
+.aboutCard .aboutCard-head{
+    font-weight: 500;
+}

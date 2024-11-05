@@ -1,0 +1,7 @@
+.language{
+    display: flex;
+    flex-direction: column;
+}
+.language-head{
+    font-weight: 500;
+}
