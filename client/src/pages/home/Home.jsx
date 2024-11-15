@@ -22,6 +22,9 @@ export default function Home() {
     <div className='home'>
       <Hero/>
       <div className='home-book'>
+        <div className='home-book-topic'>
+          Best Seller Books
+        </div>
         {items.map((item,index)=>(
           <div className='home-book-lists'>
               <div className='home-book-list' key={index}>
@@ -33,7 +36,7 @@ export default function Home() {
                 style={{ width: '100px', height: 'auto' }} // ปรับขนาดให้เหมาะสม
               />
               </div>
-              ------------------------------------
+          
           </div>
         ))}
       </div>

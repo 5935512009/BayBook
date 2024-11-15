@@ -3,3 +3,13 @@
     flex-direction: column;
     height: 100vh;
 }
+.home .home-book .home-book-topic{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.home-book-list{
+    
+}

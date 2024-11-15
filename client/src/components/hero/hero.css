@@ -1,5 +1,5 @@
 .hero{
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,5 +57,6 @@
 .hero-right img{
     padding: 3px;
     border-radius: 10px;
-    height: 270px;
+    width: 80%;
+    height: auto;
 }

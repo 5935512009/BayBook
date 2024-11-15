@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 0;
     align-items: center;
@@ -22,7 +22,7 @@
 }
 .nav-left img{
     height: 100px;
-    width: 140px;
+    width: 40%;
 }
 
 .nav .nav-left .lists{
