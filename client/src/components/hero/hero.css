@@ -3,6 +3,59 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
-    
+    height: 50vh;
+    background-color: rgb(214, 214, 214);
+    gap: 20px;
+}
+.hero .hero-left{
+    padding: 10px;
+}
+.hero .hero-left .hero-left-letter{
+    font-size: 40px;
+    font-weight: 500;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .search-bar input[type="text"] {
+    width: 300px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .search-bar input[type="text"]:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+  }
+  
+  .search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #555555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-bar button:hover {
+    background-color: #727272;
+  }
+  
+  .search-bar button:active {
+    transform: scale(0.95);
+  }
+.hero-right img{
+    padding: 3px;
+    border-radius: 10px;
+    height: 270px;
 }
