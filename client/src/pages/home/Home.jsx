@@ -20,26 +20,23 @@ export default function Home() {
   if (error) return <div>Error: {error.message}</div>;
   return (
     <div className='home'>
-      <Hero/>
-      <div className='home-book'>
-        <div className='home-book-topic'>
-          Best Seller Books
+  <Hero />
+  <div className='home-book'>
+    <div className='home-book-topic'>Best Seller Books</div>
+    <div className='home-book-lists'>
+      {items.map((item, index) => (
+        <div className='home-book-list' key={index}>
+          <img
+            src={`data:image/png;base64,${item.images}`}
+            alt={`Error images ${item.BookName}`}
+          />
+          <p>{item.BookName}</p>
+          <p>{item.type}</p>
         </div>
-        {items.map((item,index)=>(
-          <div className='home-book-lists'>
-              <div className='home-book-list' key={index}>
-                <p>{item.BookName}</p>
-                <p>{item.type}</p>
-                <img 
-                src={`data:image/png;base64,${item.images}`} 
-                alt={"Error images"+ item.BookName} 
-                style={{ width: '100px', height: 'auto' }} // ปรับขนาดให้เหมาะสม
-              />
-              </div>
-          
-          </div>
-        ))}
-      </div>
+      ))}
     </div>
+  </div>
+</div>
+
   )
 }

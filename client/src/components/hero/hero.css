@@ -1,62 +1,125 @@
-.hero{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    background-color: rgb(214, 214, 214);
-    gap: 20px;
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  height: 60vh;
+  background-color: #f5f5f5; /* เปลี่ยนเป็นสีที่สว่างกว่า */
+  gap: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-.hero .hero-left{
-    padding: 10px;
+
+.hero-left {
+  flex: 1;
+  max-width: 500px;
+  padding: 20px;
 }
-.hero .hero-left .hero-left-letter{
-    font-size: 40px;
-    font-weight: 500;
+
+.hero-left .hero-left-letter {
+  font-size: 48px;
+  font-weight: bold;
+  color: #4caf50;
+  line-height: 1.2;
+  margin-bottom: 15px;
 }
+
+.hero-left p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
 .search-bar {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
-  }
-  
-  .search-bar input[type="text"] {
-    width: 300px;
-    padding: 10px 15px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: box-shadow 0.3s ease, border-color 0.3s ease;
-  }
-  
-  .search-bar input[type="text"]:focus {
-    outline: none;
-    border-color: #4caf50;
-    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
-  }
-  
-  .search-bar button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #555555;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .search-bar button:hover {
-    background-color: #727272;
-  }
-  
-  .search-bar button:active {
-    transform: scale(0.95);
-  }
-.hero-right img{
-    padding: 3px;
-    border-radius: 10px;
-    width: 80%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar input[type="text"] {
+  flex: 1;
+  max-width: 400px;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.4);
+}
+
+.search-bar button {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-bar button:hover {
+  background-color: #45a049;
+}
+
+.search-bar button:active {
+  transform: scale(0.95);
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-right img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* เพิ่มความสามารถในการรองรับหน้าจอขนาดเล็ก */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
     height: auto;
+    padding: 20px;
+  }
+
+  .hero-left {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .hero-left .hero-left-letter {
+    font-size: 36px;
+  }
+
+  .hero-left p {
+    font-size: 16px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-bar input[type="text"] {
+    max-width: 100%;
+  }
+
+  .hero-right img {
+    max-width: 80%;
+  }
 }
