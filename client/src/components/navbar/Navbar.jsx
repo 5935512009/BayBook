@@ -12,7 +12,8 @@ export default function Navbar() {
           <li className="lists">
             <Link to="./Home">Home</Link>
             <Link to="./About">About</Link>
-            <Link to="./blogs">Blogs</Link>
+            <Link to="./Blogs">Blogs</Link>
+            <Link to="./Shop">Shop</Link>
           </li>
         </ul>
       </div>
